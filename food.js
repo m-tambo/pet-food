@@ -1,20 +1,22 @@
-let foodData = {};
+let foodData
+let brands
 
 
 
-
-// load json
+// define funsiton that loads json
 function loadBrands () {
    var foodData = new XMLHttpRequest();
    foodData.addEventListener("load", populatePage);
    foodData.open("GET", 'brands.json');
    foodData.send();
-   console.log("data:", foodData)
 }
 
 loadBrands()
 
-function populatePage () {
 
+// parse json and populate page
+function populatePage (e) {
+   brands = JSON.parse(e.target.responseText)
+   console.log("brands:", brands)
 
 }
