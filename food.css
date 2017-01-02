@@ -1,0 +1,16 @@
+
+
+th, td {
+   padding: 1%;
+   width: 200px;
+   border: 1px solid blue;
+   margin: 0;
+}
+
+th {
+   text-align: center;
+}
+
+li {
+   width: 200px;
+}
