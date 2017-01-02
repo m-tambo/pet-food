@@ -18,5 +18,13 @@ loadBrands()
 function populatePage (e) {
    brands = JSON.parse(e.target.responseText)
    console.log("brands:", brands)
-
+   for (let i=0; i < brands.length; i++) {
+      for (let j=0; j <
+         $(`
+         <tr>
+            <td>${brands.pet_brands[i]}</td>
+            <td>${brands.pet_brands[i].}</td>
+            <td>${}</td>
+         </tr>
+      `).appendTo('#foodTable')
 }
