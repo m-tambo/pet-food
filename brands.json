@@ -1,11 +1,11 @@
 {
   "pet_brands": [
     {
-      "name": "Chuck wagon",
+      "name": "Chuck Wagon",
       "breed": "All dogs",
       "types": [
         {
-          "type": "all_natural",
+          "type": "All Natural",
           "volumes": [
             {
               "name": "32oz",
@@ -18,7 +18,7 @@
           ]
         },
         {
-          "type": "standard",
+          "type": "Standard",
           "volumes": [
             {
               "name": "58oz",
@@ -37,7 +37,7 @@
       "breed": "All dogs",
       "types": [
         {
-          "type": "puppy",
+          "type": "Puppy",
           "volumes": [
             {
               "name": "16oz",
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "type": "standard",
+          "type": "Standard",
           "volumes": [
             {
               "name": "58oz",

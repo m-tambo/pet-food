@@ -18,13 +18,27 @@ loadBrands()
 function populatePage (e) {
    brands = JSON.parse(e.target.responseText)
    console.log("brands:", brands)
-   for (let i=0; i < brands.length; i++) {
-      for (let j=0; j <
-         $(`
-         <tr>
-            <td>${brands.pet_brands[i]}</td>
-            <td>${brands.pet_brands[i].}</td>
-            <td>${}</td>
-         </tr>
-      `).appendTo('#foodTable')
+   for (let i=0; i < brands.pet_brands.length; i++) {
+      for (let j=0; j < brands.pet_brands[i].types.length; j++) {
+         for ( let k=0; k < brands.pet_brands[i].types[j].volumes.length; k++) {
+            document.querySelector('#foodTable').innerHTML +=
+            (`
+               <tr>
+                  <td>${brands.pet_brands[i].name}</td>
+                  <td>${brands.pet_brands[i].breed}</td>
+                  <td>
+                     <ul>
+                        <li>${brands.pet_brands[i].types[j].type}
+                        |
+                        ${brands.pet_brands[i].types[j].volumes[k].name}
+                        |
+                        ${brands.pet_brands[i].types[j].volumes[k].price}
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+         `)
+         }
+      }
+   }
 }
