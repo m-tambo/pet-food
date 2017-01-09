@@ -7,7 +7,7 @@ let brands
 function loadBrands () {
    var foodData = new XMLHttpRequest();
    foodData.addEventListener("load", populatePage);
-   foodData.open("GET", 'brands.json');
+   foodData.open("GET", 'https://pet-foods-exercise.firebaseio.com/.json');
    foodData.send();
 }
 
